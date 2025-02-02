@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .custom-element {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,22 +26,53 @@
     <hr>
     <main>
         <h1>Justin Yang</h1>
+        <audio id="name_audio" src="media/my_name.m4a"></audio>
+        <script>
+        </script>
+        <img src="media/speaker.png" alt="speaker" height="50px">
         <section>
-            <img src="media/self_pic1.jpg" alt="Photo" style="width: auto; height: 500px;">
-        </section>
-        <section>
-            <h2>About Me</h2>
-            <p>
-                Hi, I’m Justin! I’m a junior at UC San Diego studying computer science, originally from San Diego, CA. I’ve always been passionate about software development, especially backend systems, AI applications, and embedded systems. I love the challenge of building scalable and efficient solutions. I’m currently seeking internships for summer 2025 to further develop my skills and gain hands-on experience in the tech industry. On my free time, I enjoy hiking and traveling—whether it's exploring national parks or discovering new cities. I’m also a big basketball fan, both playing and watching games whenever I get the chance.</p>
-        </section>
-        <section>
-            <img src="media/self_pic2.jpg" alt="Photo" style="width: auto; height: 500px;">
-            <img src="media/self_pic3.jpg" alt="Photo" style="width: auto; height: 500px;">
+            <img src="media/self_pic1.jpg" alt="Photo" height="500px;">
+            <aside>
+                <h2>About Me</h2>
+                <p>
+                    <code>Hello, World!</code>
+                    <pre>I'm Justin</pre>
+                    I’m a junior at UC San Diego studying computer science, originally from San Diego, CA. I’ve always been passionate about software development, especially backend systems, AI applications, and embedded systems. I love the challenge of building scalable and efficient solutions. I’m currently seeking internships for summer 2025 to further develop my skills and gain hands-on experience in the tech industry.
+                    <br>
+                    On my free time, I enjoy hiking and traveling—whether it's exploring national parks or discovering new cities. I’m also a big basketball fan, both playing and watching games whenever I get the chance.
+                </p>
+            </aside>
+            <img src="media/self_pic2.jpg" alt="Photo" height="500px">
+            <img src="media/self_pic3.jpg" alt="Photo" height="500px">
         </section>
     </main>
     <hr>
     <footer>
-        <p>Contact info: <img src="media/gmail.png" alt="Photo" style="width: auto; height: 15px;"> <img src="media/linkedin.png" alt="Photo" style="width: auto; height: 15px;"> <img src="media/github.svg" alt="Photo" style="width: auto; height: 15px;"> | <a href="docs/justin_yang_resume.pdf" target="_blank">Resume</a></p>
+        <table>
+            <caption>
+                Contact info: 
+            </caption>
+            <colgroup>
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>Email</th>
+                    <td>
+                        <img src="media/gmail.png" alt="Photo" height="15px">
+                    </td>
+                    <th>LinkedIn</th>
+                    <td>
+                        <img src="media/linkedin.png" alt="Photo" height="15px">
+                    </td>
+                    <th>GitHub</th>
+                    <td>
+                        <img src="media/github.svg" alt="Photo" height="15px">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="docs/justin_yang_resume.pdf" target="_blank">Resume</a>
     </footer>
 </body>
 </html>

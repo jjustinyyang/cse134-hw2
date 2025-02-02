@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies/Interests</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .custom-element {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,25 +28,70 @@
         <h1>Hobbies/Interests</h1>
         <section>
             <h2>Hiking</h2>
-            <img src="media/hike.jpg" alt="Photo" style="width: auto; height: 500px;">
+            <img src="media/hike.jpg" alt="Photo" height="500px">
             <p>Hiking gives me a chance to disconnect from daily life and immerse myself in nature. I enjoy exploring different trails, taking in scenic views, and challenging myself with tougher hikes. There's something rewarding about reaching the peak of a trail and looking back at the journey it took to get there.</p>
+            <h3>You know a spot?</h3>
+            <form>
+                <label for="favorite-trail">What is your favorite trail?</label>
+                <input type="text" id="favorite-trail" name="favorite-trail" required>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
         </section>
         <section>
             <h2>Traveling</h2>
-            <img src="media/travel1.jpg" alt="Photo" style="width: auto; height: 500px;">
-            <img src="media/travel2.jpg" alt="Photo" style="width: auto; height: 500px;">
+            <img src="media/travel1.jpg" alt="Photo" height="500px">
+            <img src="media/travel2.jpg" alt="Photo" height="500px">
             <p>I love traveling and experiencing new places, cultures, and foods. Exploring different cities and landscapes allows me to gain new perspectives and create lasting memories. Whether it's a road trip to a nearby destination or an international adventure, I always look forward to the next journey.</p>
+            <h3>You decide my next trip!</h3>
+            <form>
+                <label for="next-destination">Where should I visit next?</label>
+                <input type="text" id="next-destination" name="next-destination" required>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
         </section>
         <section>
             <h2>Basketball</h2>
-            <img src="media/basketball1.jpeg" alt="Photo" style="width: auto; height: 500px;">
-            <img src="media/basketball2.jpeg" alt="Photo" style="width: auto; height: 500px;">
+            <img src="media/basketball1.jpeg" alt="Photo" height="500px">
+            <img src="media/basketball2.jpeg" alt="Photo" height="500px">
             <p>Basketball has always been a passion of mine, and I love following the game at both the professional and casual levels. My favorite team is the Golden State Warriors, and I admire Stephen Curry for his incredible shooting ability and leadership on the court. Whether it's playing a pickup game or watching the Warriors in action, basketball is a sport that always excites me.</p>
+            <h3>Lets talk basketball!</h3>
+            <form>
+                <label for="favorite-nba">What is your favorite NBA team / player?</label>
+                <input type="text" id="favorite-nba" name="favorite-nba" required>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
         </section>
     </main>
     <hr>
     <footer>
-        <p>Contact info: <img src="media/gmail.png" alt="Photo" style="width: auto; height: 15px;"> <img src="media/linkedin.png" alt="Photo" style="width: auto; height: 15px;"> <img src="media/github.svg" alt="Photo" style="width: auto; height: 15px;"> | <a href="docs/justin_yang_resume.pdf" target="_blank">Resume</a></p>
+        <table>
+            <caption>
+                Contact info: 
+            </caption>
+            <colgroup>
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>Email</th>
+                    <td>
+                        <img src="media/gmail.png" alt="Photo" height="15px">
+                    </td>
+                    <th>LinkedIn</th>
+                    <td>
+                        <img src="media/linkedin.png" alt="Photo" height="15px">
+                    </td>
+                    <th>GitHub</th>
+                    <td>
+                        <img src="media/github.svg" alt="Photo" height="15px">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="docs/justin_yang_resume.pdf" target="_blank">Resume</a>
     </footer>
 </body>
 </html>

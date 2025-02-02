@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .custom-element {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,9 +28,9 @@
         <h1>Education</h1>
         <section>
             <h2>University of California - San Diego</h2>
-            <p>B.S. Computer Science</p>
-            <p>GPA: 3.84</p>
-            <p>Expected Graduation: June 2026</p>
+            <p><b>Major:</b> B.S. Computer Science</p>
+            <p><b>GPA:</b> <i>3.84</i></p>
+            <p><b>Expected Graduation:</b> June 2026</p>
         </section>
         <section>
             <h2>Courses</h2>
@@ -41,14 +47,38 @@
             </ul>
         </section>
         <section>
-            <img src="media/ucsd1.jpeg" alt="Photo" style="width: auto; height: 400px;">
-            <img src="media/ucsd2.webp" alt="Photo" style="width: auto; height: 400px;">
-            <img src="media/ucsd3.jpeg" alt="Photo" style="width: auto; height: 400px;">
+            <img src="media/ucsd1.jpeg" alt="Photo" height="400px">
+            <img src="media/ucsd2.webp" alt="Photo" height="400px">
+            <img src="media/ucsd3.jpeg" alt="Photo" height="400px">
         </section>
     </main>
     <hr>
     <footer>
-        <p>Contact info: <img src="media/gmail.png" alt="Photo" style="width: auto; height: 15px;"> <img src="media/linkedin.png" alt="Photo" style="width: auto; height: 15px;"> <img src="media/github.svg" alt="Photo" style="width: auto; height: 15px;"> | <a href="docs/justin_yang_resume.pdf" target="_blank">Resume</a></p>
+        <table>
+            <caption>
+                Contact info: 
+            </caption>
+            <colgroup>
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>Email</th>
+                    <td>
+                        <img src="media/gmail.png" alt="Photo" height="15px">
+                    </td>
+                    <th>LinkedIn</th>
+                    <td>
+                        <img src="media/linkedin.png" alt="Photo" height="15px">
+                    </td>
+                    <th>GitHub</th>
+                    <td>
+                        <img src="media/github.svg" alt="Photo" height="15px">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="docs/justin_yang_resume.pdf" target="_blank">Resume</a>
     </footer>
 </body>
 </html>
